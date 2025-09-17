@@ -5,7 +5,7 @@ A comprehensive ETL (Extract, Transform, Load) system built with Airflow 3.0.0, 
 ## 🏗️ Architecture
 
 ### Stack Components
-- **Airflow 3.0.0**: Orchestration, DAGs, tasks, hooks, and best practices
+- **Airflow 3.0.0**: Orchestration with new @dag and @task decorators, datasets, and best practices
 - **Kafka**: Message streaming and event processing
 - **Zookeeper**: Kafka cluster coordination
 - **Debezium**: Change Data Capture (CDC) from PostgreSQL
@@ -43,9 +43,19 @@ cd af3_cdc_stream_batch_etl
 ### 3. Enable DAGs in Airflow
 1. Access Airflow UI
 2. Enable the following DAGs:
-   - `etl_main_processing`: Main orchestration
+   - `etl_main_processing`: Main orchestration with Airflow 3.0 patterns
    - `etl_data_generation`: Continuous data generation
    - `etl_batch_processing`: Daily batch analytics
+   - `airflow_3_demo`: Demo of Airflow 3.0 best practices
+
+### 4. Airflow 3.0 Features
+This project showcases modern Airflow 3.0 patterns:
+- `@dag` and `@task` decorators
+- Dataset-based data lineage
+- Modern dependency management
+- Enhanced documentation patterns
+
+See [AIRFLOW_3_MIGRATION.md](./AIRFLOW_3_MIGRATION.md) for migration details.
 
 ## 📁 Project Structure
 

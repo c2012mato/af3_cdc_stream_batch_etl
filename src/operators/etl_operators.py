@@ -8,7 +8,7 @@ from datetime import datetime
 
 from airflow.models import BaseOperator
 from airflow.utils.context import Context
-from airflow.hooks.postgres_hook import PostgresHook
+from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 from hooks.debezium_hook import DebeziumHook
 from processors.data_generator import DataGenerator

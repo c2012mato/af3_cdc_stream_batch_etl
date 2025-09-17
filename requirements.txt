@@ -1,5 +1,6 @@
 # Airflow
-apache-airflow[celery,postgres,redis]==2.8.0
+apache-airflow[celery,postgres,redis]==3.0.0
+apache-airflow-providers-postgres==5.10.0
 
 # Database connectors
 psycopg2-binary==2.9.9
